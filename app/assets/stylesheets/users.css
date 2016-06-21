@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', serif; font-weight: 700; col
   .navbar-default .navbar-nav>li>a { padding: 10px 25px 9px 0; }
 }
 
-  
+
 /*--- HOME ---*/
 #home {
   background: url('http://s17.postimg.org/m4bfqfgn3/fog_1005445_1920.jpg') no-repeat center center fixed;
@@ -111,5 +111,4 @@ a.linkedin-btn:after { background-color: #0077B5; }
 a.fcc-btn:after { background-color: #4B2B0D; }
 a.btn-default:hover, a.btn-default:focus { background-color: #FFFFFF; color: #FFFFFF; }
 a.btn-default:hover:after { width: 100%; }
-
 

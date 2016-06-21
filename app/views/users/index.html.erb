@@ -3,15 +3,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <style> .fa-twitter:before{color: #00ACED !important;} .fa-facebook:before{color: #4267B2;}</style>
 
-  <style> .header{padding-top: 50px !important;}</style>
+  <style> .header{text-align:center;padding-top: 50px !important;}</style>
   <!-- HOME -->
   <div id="home" class="content-section">
     <div class="container">
       <div class="row">
         <div class="header">
           <h1>Tyler Garcia</h1>
+          <%= image_tag 'pic.jpg', :class => "pic" %>
+          <style> img.pic{width:200px; height:302px; margin-left:-5px; border-radius:50px;}</style>
           <h5>Full Stack Developer</h5>
-          <%= image_tag 'pic.jpg' %>
         </div>
       </div>
     </div>
@@ -23,77 +24,80 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-lg-7">
-          <h2>ABOUT</h2>
+          <h3>ABOUT</h3>
           <p class="lead">I am a 19 year old full stack developer with a focus on dynamically typed languages (Ruby & Javascript)</p>
           <blockquote><mark><em>Youngest alumni</em></mark> to graduate from Wyncode`s Elite Immersive Full Stack coding bootcamp <Top 5% acceptance rate>.</blockquote>
           <p><strong>Im great at finding solutions and crushing bugs!! 
             Did I mention that I also love to build great products!?!</strong></p>
             <p><strong><mark><em>Skills:</em></mark></strong> <a href="http://api.rubyonrails.org/">Ruby on Rails</a>, <a href="http://ruby-doc.org/">Ruby</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">Javascript</a>, <a href="https://api.jquery.com/">jQuery</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS</a>, <a href="http://getbootstrap.com/getting-started/">Bootstrap</a></p>
-              <p><strong><mark><em>Learning:</em></mark></strong> <a href="">Node</a>, <a href="">C#</a>, <a href="https://dev.mysql.com/doc/">MySQL</a></p>
-              <p><strong><mark><em>Contact Information:</em></mark></strong> Email: t-garcia15@hotmail.com
-              Github: github.com/tylergarcia8
-              </p>
-            </div>
-            <div class="col-sm-4 col-lg-5 hidden-xs">
-              <img src="" alt="about pic" class="pull-right img-responsive">
-            </div>
+            <p><strong><mark><em>Learning:</em></mark></strong> <a href="">Node</a>, <a href="">C#</a>, <a href="https://dev.mysql.com/doc/">MySQL</a></p>
           </div>
-        </div>    
-      </div>
+        </div>
+      </div>    
+    </div>
 
 
-      <!-- PORTFOLIO -->
-      <div id="portfolio" class="content-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <h1>PORTFOLIO</h1>
-              <p class="lead">Check out some of my recent projects.</p>
+    <!-- PORTFOLIO -->
+    <div id="portfolio" class="content-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>PORTFOLIO</h3>
+            <p class="lead">Check out some of my recent projects.</p>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="http://greenenergychronicles.com/wp-content/uploads/2016/03/sunset-windmills.jpg" alt="windpower">
+              <div class="caption">
+                <h4><%= link_to "WindPower", "https://windpower.herokuapp.com"%></h4>
+                <p>Educational Renewable Energy survey for external visitors to input their
+                  interest in Wind Power Energy.</p>
+                </div>
+              </div>
             </div>
+            <style>.thumbnail{text-align:center;}</style>
             <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <img src="http://greenenergychronicles.com/wp-content/uploads/2016/03/sunset-windmills.jpg" alt="windpower">
+              <div class="projects">
+               <div class="thumbnail">
+                <div class="wyn"><img src="http://www.bootcamps.in/wp-content/uploads/2014/03/wyncode.jpg" alt="wynworld"></div>
                 <div class="caption">
-                  <h4><%= link_to "WindPower", "https://windpower.herokuapp.com"%></h4>
-                  <p>Educational Renewable Energy survey for external visitors to input their
-                    interest in Wind Power Energy.</p>
+                  <h4><%= link_to "WynWorld", "https://wynworldjti.herokuapp.com"%></h4>
+                  <p>Wynworld is the Linkedin for Wyncode Academy, where alumni can stay in
+                    contact and see each other’s progress upon graduation.</p>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                  <div class="wyn"><img src="http://www.bootcamps.in/wp-content/uploads/2014/03/wyncode.jpg" alt="wynworld"></div>
-                  <div class="caption">
-                    <h4><%= link_to "WynWorld", "https://wynworldjti.herokuapp.com"%></h4>
-                    <p>Wynworld is the Linkedin for Wyncode Academy, where alumni can stay in
-                      contact and see each other’s progress upon graduation.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- CONTACT -->
+        <div id="contact" class="content-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h3>Find Me!</h3>
+                <p><strong><mark><em>Contact Information:</em></mark>
+                </strong> Email: t-garcia15@hotmail.com<br>
+                Github: github.com/tylergarcia8
+              </p>
+              <p class="lead">Check me out on my other Social Media sites</p>
+              <div class="social-cont">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <ul><a class="btn btn-default btn-lg linkedin-btn" href="https://www.facebook.com/tyler.garcia.14" role="button" target="_blank"><i class="fa fa-facebook"></i><span>  Facebook</span></a>
+                      <a class="btn btn-default btn-lg github-btn" href="https://github.com/tylergarcia8" role="button" target="_blank"><i class="fa fa-github"></i><span> Github</span></a>
+                    </ul>
+                    <ul><a class="btn btn-default btn-lg twitter-btn" href="https://twitter.com/Tylergarcia_" role="button" target="_blank"><i class="fa fa-twitter"></i><span>  Twitter</span></a>
+                      <a class="btn btn-default btn-lg linkedin-btn" href="https://linkedin.com/in/tylergarcia8" role="button" target="_blank"><i class="fa fa-linkedin"></i><span>  Linkedin</span></a></ul>
+                      <style> .col-sm-12{text-align:center;}</style>
                     </div>
-                  </div>
+                  </div>  
                 </div>
+
               </div>
             </div>
           </div>
-
-
-
-          <!-- CONTACT -->
-          <div id="contact" class="content-section">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-12">
-                  <h1>Find Me!</h1>
-                  <p class="lead">Check me out on my other Social Media sites</p>
-                  <div class="social-cont">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <a class="btn btn-default btn-lg linkedin-btn" href="https://www.facebook.com/tyler.garcia.14" role="button" target="_blank"><i class="fa fa-facebook"></i><span>  Facebook</span></a>
-                        <a class="btn btn-default btn-lg twitter-btn" href="https://twitter.com/Tylergarcia_" role="button" target="_blank"><i class="fa fa-twitter"></i><span>  Twitter</span></a>
-                        <a class="btn btn-default btn-lg github-btn" href="https://github.com/tylergarcia8" role="button" target="_blank"><i class="fa fa-github"></i><span>  Github</span></a>
-                      </div>
-                    </div>  
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
