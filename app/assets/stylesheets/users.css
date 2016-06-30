@@ -1,6 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Courgette);
+
 /*--- GENERAL STYLES ---*/
 body { font-size: 16px; line-height: 1.5em; font-family: 'Quattrocento Sans', sans-serif; }
-h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', serif; font-weight: 700; color: #1a1a1a; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Courgette', cursive; font-weight: 700; color: #1a1a1a; }
 .content-section { min-height: 100vh; padding-top: 70px; padding-bottom: 20px; }
 .content-section h1 { color: #9C9C9C; font-weight: 400; font-size: 30px; display: inline-block; }
 .content-section h1:after { content: ''; display: block; border-bottom: 1px solid #DFDFDF; padding-top: 3px; }
@@ -63,7 +65,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', serif; font-weight: 700; col
   background: url('http://s17.postimg.org/m4bfqfgn3/fog_1005445_1920.jpg') no-repeat center center fixed;
   background-size: cover; text-shadow: 1px 1px 0 rgba(255,255,255,0.5); text-align: center;
 }
-#home h1 { font-family: 'Advent Pro', sans-serif; font-size: 96px; color: #000; display: inline-block; margin: 0; padding: 0; line-height: 90px; margin-top: 60px; }
+#home h1 { font-family: 'Courgette', cursive; font-size: 96px; color: #000; display: inline-block; margin: 0; padding: 0; line-height: 90px; margin-top: 60px; }
 #home h1:after { border-bottom: 1px solid #AAA;  }
 #home h5 { font-size: 16px; color: #555; }
 
